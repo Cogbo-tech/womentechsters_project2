@@ -96,8 +96,8 @@ figure{
     margin-top: 2%;
 }
 .dew{
-   width: 15px;
-   height: 15px;
+   width: 18px;
+   height: 18px;
    /* border: 1px solid black; */
 }
 .bud span li{
@@ -172,7 +172,7 @@ figure{
     display: flex;
     list-style: none;
     position: relative;
-    left: -10vh;
+    left: -5vh;
     justify-content: flex-start;
 }
 .anal nav li{
@@ -385,8 +385,8 @@ hr{
     background-position: 20%;
 }
 .histo{
-   width:80%;
-   height: 80%;
+   width:50%;
+   height: 50%;
    display: flex;
    justify-content: center;
    align-items: center;
@@ -417,9 +417,10 @@ hr{
     height: ;
 } */ 
 
-.histo div img{
-    width: 100%;
+.histo  img{
+    width: 50px;
     height: 100%;
+    margin-left: unset; 
 }
 .chart4{
     grid-column: 3/5;
@@ -495,6 +496,12 @@ hr{
     .navi{
         display: none;
     }
+    .anal nav{
+        display: none;
+    }
+    .side:hover .navi{
+        display: block;
+    }
 }
 
 /* ...................styling for small screen......... */
@@ -507,8 +514,8 @@ hr{
     .navi{
      display: none;
     }
-    }
-
+    
+}
 
 
 
