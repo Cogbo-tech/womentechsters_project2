@@ -183,13 +183,16 @@ figure{
     height: 15px;
     /* background-color: palevioletred; */
     margin-left: 5%;
-    border: 1pxsolid black;
+    /* border: 1px solid black; */
 }
 .search{
     width: 55%;
-    height: 25px;
+    height: 20px;
     border-radius: 10px;
-    background-color: aliceblue;
+    background-color: #0000000D;
+    padding: 1% 1%;
+    color: #00000033;
+    
 }
 
 /* ...............main box of analysis section */
@@ -377,7 +380,7 @@ hr{
     width: 100%;
     display: flex;
     justify-content: center;
-    /* align-items: baseline; */
+    align-items: center;
     grid-column: 1/3;
     background-image: url(image/ChartScale\ \(1\).png);
     background-repeat: no-repeat;
@@ -385,43 +388,57 @@ hr{
     background-position: 20%;
 }
 .histo{
-   width:50%;
-   height: 50%;
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   margin: auto;
-   /* border: 1px solid black; */
-}
-/* .histo div{
-    width:8%;
+    width: 8%;
     height: 50%;
-    border: 1px solid black;
+    /* border:1px solid black; */
+    margin-left: 5%;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
     position: relative;
-    /* top: 20%; */
-    /* margin-left: 10%; */
-/* }
-.histo div:nth-child(){
-    height: ;
+    /* top: 2%; */
 }
-.histo div:nth-child(){
-    height: ;
+.chart3 span:nth-child(1){
+    height: 30%;
+    background-color: #BAEDBD;
+    margin-left: 10%;
+    position: relative;
+    top: 5%;
 }
-.histo div:nth-child(){
-    height: ;
+.chart3 span:nth-child(2){
+    height: 38%;
+    margin-left: 8%;
+    background-color: #C6C7F8;
+    margin-top: 1%;
 }
-.histo div:nth-child(){
-    height: ;
+.chart3 span:nth-child(3){
+    height: 34%;
+    margin-left: 8%;
+    background-color:#1C1C1C ;
+    position: relative;
+    top: 3%;
 }
-.histo div:nth-child(){
-    height: ;
-} */ 
+.chart3 span:nth-child(4){
+    margin-left:8% ;
+    background-color:#B1E3FF ;
+    position: relative;
+    bottom: 5%;
+}
+.chart3 span:nth-child(5){
+    height: 20%;
+    margin-left: 6%;
+    background-color:#95A4FC ;
+    position: relative;
+    top: 10%;
+}
+.chart3 span:nth-child(6){
+    height: 36%;
+    margin-left:6% ;
+    background-color: #A1E3CB;
+    position: relative;
+    top: 2%;
+}
 
-.histo  img{
-    width: 50px;
-    height: 100%;
-    margin-left: unset; 
-}
+
 .chart4{
     grid-column: 3/5;
     width: 100%;
@@ -546,6 +563,7 @@ hr{
     }
     .cht2{
         width: 100%;
+        /* margin: auto; */
         display: flex;
         justify-content: space-evenly;
         /* display: none; */
@@ -593,7 +611,7 @@ hr{
     }
  }
 
- @media screen and (min-width:100px) and (max-width: 800px){
+ @media screen and (min-width:100px) and (max-width: 900px){
      .main{
          /* width: 2000px; */
      }
@@ -612,7 +630,7 @@ hr{
     .charts{
         display: grid;
     grid-template-columns: repeat(1, 0.9fr);
-    grid-auto-rows: minmax(150px, auto);
+    grid-auto-rows: minmax(200px, auto);
     margin-left: 4%;
     }
     .chart1{
@@ -620,6 +638,10 @@ hr{
     }
     .chart2{
         grid-column:unset ;
+    }
+    .cht2{
+        width: 80%;
+        margin: auto;
     }
     .frame{
         width: 50%;
@@ -633,7 +655,12 @@ hr{
     .chart5{
         grid-column: unset;
     }
+    .histo{
+        position: relative;
+        top: 5%;
+    }
  }
+
 
 
 
